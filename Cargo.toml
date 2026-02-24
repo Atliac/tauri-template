@@ -1,7 +1,29 @@
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+authors = ["Atliac"]
+description = "tauri-isomorphic"
+repository = "https://github.com/atliac/tauri-template"
+documentation = "https://docs.rs/tauri-template"
+homepage = "https://github.com/atliac/tauri-template"
+readme = "README.md"
+keywords = [""]
+categories = [""]
+
 [package]
 name = "tauri-template-ui"
-version = "0.1.0"
-edition = "2021"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description.workspace = true
+repository.workspace = true
+documentation.workspace = true
+homepage.workspace = true
+readme.workspace = true
+keywords.workspace = true
+categories.workspace = true
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
