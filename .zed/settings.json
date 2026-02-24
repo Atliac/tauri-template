@@ -1,0 +1,23 @@
+{
+  "languages": {
+    "CSS": {
+      "language_servers": [
+        "tailwindcss-intellisense-css",
+        "!vscode-css-language-server",
+        "..."
+      ]
+    },
+    "Rust": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "leptosfmt",
+          "arguments": [
+            "--stdin",
+            "--rustfmt"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@import "tailwindcss" source("./src");
+@plugin "./daisyui_5.5.18.js" {
+    themes: all;
+}
+@plugin "@tailwindcss/typography";
