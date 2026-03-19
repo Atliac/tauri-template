@@ -2,9 +2,21 @@ version: 2
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
+    labels:
+      - "ci"
+    groups:
+      github-actions:
+        patterns: ["*"]
     schedule:
       interval: "weekly"
+
   - package-ecosystem: "cargo"
     directory: "/"
+    labels:
+      - "dependencies"
+      - "rust"
+    groups:
+      cargo:
+        patterns: ["*"]
     schedule:
       interval: "weekly"
