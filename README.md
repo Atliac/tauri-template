@@ -14,20 +14,16 @@ Before you begin, ensure you have the following installed on your system:
 
 - **[Rust](https://www.rust-lang.org/tools/install)**: The core language for the backend and WASM.
 - **[Trunk](https://trunkrs.dev/)**: The WASM web asset manager.
-  ```powershell
-  cargo install --locked trunk
-  ```
 - **[Tauri CLI](https://tauri.app/v2/guides/start/prerequisites)**: The command-line tool for Tauri.
-  ```powershell
-  cargo install tauri-cli
-  ```
+- **[leptosfmt](https://github.com/bram209/leptosfmt)**: optional, but recommended for formatting Leptos code.
 
 ### 🏁 Getting Started
 
 1. **Install Dependencies**:
    ```powershell
    cargo install --locked trunk
-   cargo install tauri-cli
+   cargo install --locked tauri-cli
+   cargo install --locked leptosfmt
    ```
 2. **Launch Development Server**:
    ```powershell
