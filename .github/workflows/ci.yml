@@ -61,9 +61,8 @@ jobs:
       - name: Run tests
         run: cargo test --verbose
 
-      - uses: tauri-apps/tauri-action@v0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          projectPath: app
-          args: ${{ matrix.args }}
+      - name: Install Tauri CLI
+        run: cargo install tauri-cli --locked
+
+      - name: Build Tauri
+        run: cargo tauri build -no-bundle
