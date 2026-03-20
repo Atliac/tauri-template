@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "identifier": "com.atliac.tauri-template",
   "build": {
-    "beforeDevCommand": "trunk serve --config ui/Trunk.toml",
+    "beforeDevCommand": "trunk serve",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "trunk build --config ui/Trunk.toml",
+    "beforeBuildCommand": "trunk build",
     "frontendDist": "dist"
   },
   "app": {

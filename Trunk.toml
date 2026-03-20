@@ -1,8 +1,8 @@
 [build]
-target = "./index.html"
-dist = "../dist"
+target = "ui/index.html"
 
 [watch]
+ignore = ["app"]
 
 [serve]
 port = 1420
