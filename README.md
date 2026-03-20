@@ -1,6 +1,6 @@
-# 🏗️ Tauri-template
+# 🚀 Tauri-Leptos Template
 
-This is a modern, high-performance template for building Tauri applications using **Leptos** and **Trunk**.
+A Tauri template that uses `Leptos`, `TailwindCSS`, `DaisyUI` for the frontend.
 
 ---
 
@@ -13,7 +13,6 @@ Follow these steps to set up your development environment and get the applicatio
 Before you begin, ensure you have the following installed on your system:
 
 - **[Rust](https://www.rust-lang.org/tools/install)**: The core language for the backend and WASM.
-- **[Node.js](https://nodejs.org/)**: Required for frontend styling dependencies like **DaisyUI**.
 - **[Trunk](https://trunkrs.dev/)**: The WASM web asset manager.
   ```powershell
   cargo install --locked trunk
@@ -27,7 +26,8 @@ Before you begin, ensure you have the following installed on your system:
 
 1. **Install Dependencies**:
    ```powershell
-   npm install
+   cargo install --locked trunk
+   cargo install tauri-cli
    ```
 2. **Launch Development Server**:
    ```powershell
@@ -48,5 +48,3 @@ You may choose either license at your discretion.
 ## 🤝 Contribution
 
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any additional terms or conditions.
-
-

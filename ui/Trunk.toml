@@ -9,4 +9,6 @@ port = 1420
 open = false
 
 [tools]
-tailwindcss = "4.2.0"
+# https://github.com/dobicinaitis/tailwind-cli-extra
+# specify the version of tailwind-cli-extra to use
+tailwindcss = "2.8.3"
