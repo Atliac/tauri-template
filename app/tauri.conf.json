@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "identifier": "com.atliac.tauri-template",
   "build": {
-    "beforeDevCommand": "trunk serve --manifest-path ../Trunk.toml",
+    "beforeDevCommand": "trunk serve",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "trunk build --manifest-path ../Trunk.toml",
-    "frontendDist": "../dist"
+    "beforeBuildCommand": "trunk build",
+    "frontendDist": "dist"
   },
   "app": {
     "withGlobalTauri": true,
