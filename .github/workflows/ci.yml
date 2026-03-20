@@ -38,11 +38,6 @@ jobs:
           components: clippy, rustfmt
           targets: wasm32-unknown-unknown
 
-      - name: Install Trunk
-        uses: jetli/trunk-action@v0.5.0
-        with:
-          version: 'latest'
-
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2
 
@@ -61,9 +56,11 @@ jobs:
       - name: Run tests
         run: cargo test --verbose
 
-      - uses: tauri-apps/tauri-action@v0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          projectPath: app
-          args: ${{ matrix.args }}
+      - name: Install Trunk
+        run: cargo install trunk --locked
+
+      - name: Install Tauri CLI
+        run: cargo install tauri-cli --locked
+
+      - name: Build Tauri
+        run: cargo tauri build --no-bundle
