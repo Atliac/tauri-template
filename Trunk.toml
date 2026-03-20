@@ -11,4 +11,4 @@ open = false
 [tools]
 # https://github.com/dobicinaitis/tailwind-cli-extra
 # specify the version of tailwind-cli-extra to use
-tailwindcss = "2.8.2"
+tailwindcss = "2.8.3"
