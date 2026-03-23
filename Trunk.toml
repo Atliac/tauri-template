@@ -2,6 +2,7 @@
 target = "ui/index.html"
 
 [watch]
+watch = ["."]
 ignore = ["app"]
 
 [serve]
