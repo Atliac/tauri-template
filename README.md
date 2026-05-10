@@ -20,13 +20,17 @@ Before you begin, ensure you have the following installed on your system:
 ### 🏁 Getting Started
 
 1. **Install Dependencies**:
-   ```powershell
+   ```bash
    cargo install --locked trunk
    cargo install --locked tauri-cli
    cargo install --locked leptosfmt
+
+   // Optional: enables Tailwind CSS IntelliSense in VS Code
+   npm install -D daisyui@[VERSION]
    ```
+
 2. **Launch Development Server**:
-   ```powershell
+   ```bash
    cargo tauri dev
    ```
 
