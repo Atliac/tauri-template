@@ -1,10 +1,10 @@
 name: Tauri Build
 
 on:
-  workflow_run:
-    workflows: ["Rust CI"]
-    types:
-      - completed
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -12,8 +12,6 @@ permissions:
 jobs:
   build:
     name: Build Tauri (${{ matrix.platform }})
-    # Only run if the triggering workflow succeeded
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ${{ matrix.platform }}
     strategy:
       fail-fast: false
